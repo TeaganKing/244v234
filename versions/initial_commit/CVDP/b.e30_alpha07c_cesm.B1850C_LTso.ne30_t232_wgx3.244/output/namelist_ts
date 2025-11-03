@@ -1,0 +1,6 @@
+ERSST v5 | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/ersstv5.185401-201912.nc | 1920 | 2018
+HadISST | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/hadisst.187001-201912.nc | 1920 | 2018
+ERSST v5_1 | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/ersstv5.185401-201912.nc | 1979 | 2018
+HadISST_1 | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/hadisst.187001-201912.nc | 1980 | 2017
+b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244 | /glade/campaign/cesm/development/cross-wg/diagnostic_framework/CESM_output_for_testing/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244/atm/proc/tseries/*.nc | 1 | 32
+b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234 | /glade/campaign/cesm/development/cross-wg/diagnostic_framework/CESM_output_for_testing/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234/atm/proc/tseries/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234.cam.h0a.TS.000101-008012.nc | 1 | 80

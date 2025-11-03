@@ -1,0 +1,308 @@
+<html><head><title>Climate Variability Diagnostics Package</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<style>body {background-color: WhiteSmoke; font-family: Verdana, Geneva, sans-serif}
+img.title {width:990; height:105; align:left}
+p.subtitle {font-size:20pt; color:black; text-align:center; font-weight:bold}
+p.btext {font-size:11pt; text-align:left}
+font.s1 {font-size:13.5pt; text-align:left}
+td {text-align:center; font-size:12pt}
+td.s1 {text-align:left; font-size:11pt}
+td.s2 {border-bottom: 4px double darkgray}
+CAPTION {text-align:left; font-size:14pt; font-weight:bold}
+</style></head>
+<body><div class="container">
+<div class="row">
+<img class="img-fluid" src="cas-cvdp.png" alt="CVDP logo">
+</div>
+<div class="row"><div class="col"><table class="table my-0">
+<tr><td class="text-left"><ul class="list-inline my-0"><li class="list-inline-item"><font class=s1><a href="methodology.html">Methodology and Definitions</a></font></li><br>
+<li class="list-inline-item">Metrics Tables: <a href="metrics.table_0.html">Pattern Correlations</a> | <a href="metrics.table_14.html">RMS</a></li><br>
+<li class="list-inline-item">Namelists: <a href="namelist_obs.html">Input</a> | <a href="namelist_msftmz.html">Derived</a></li><br>
+<li class="list-inline-item">Climatological Period Used: Full</li><br><li class="list-inline-item">Created: Mon 03 Nov 2025 02:22:22 PM MST</li><br><li class="list-inline-item">CVDP Version 5.2.0</li></ul></td>
+<td><p class=subtitle>ADF/CVDP Comparison</p></td></tr></table></div></div>
+<div class="row"><div class="col">
+<table class="table table-striped table-bordered">
+<h3 class="display-6">Means</h3>
+<tr><td><b>SST</b></td><td><a href="sst.mean.djf.png">DJF</a></td><td><a href="sst.mean.mam.png">MAM</a></td><td><a href="sst.mean.jja.png">JJA</a></td><td><a href="sst.mean.son.png">SON</a></td><td><a href="sst.mean.ann.png">Annual</a></td></tr>
+<tr><td><b>TAS</b></td><td><a href="tas.mean.djf.png">DJF</a></td><td><a href="tas.mean.mam.png">MAM</a></td><td><a href="tas.mean.jja.png">JJA</a></td><td><a href="tas.mean.son.png">SON</a></td><td><a href="tas.mean.ann.png">Annual</a></td></tr>
+<tr><td><b>PSL</b></td><td><a href="psl.mean.djf.png">DJF</a></td><td><a href="psl.mean.mam.png">MAM</a></td><td><a href="psl.mean.jja.png">JJA</a></td><td><a href="psl.mean.son.png">SON</a></td><td><a href="psl.mean.ann.png">Annual</a></td></tr>
+<tr><td><b>PR</b></td><td><a href="pr.mean.djf.png">DJF</a></td><td><a href="pr.mean.mam.png">MAM</a></td><td><a href="pr.mean.jja.png">JJA</a></td><td><a href="pr.mean.son.png">SON</a></td><td><a href="pr.mean.ann.png">Annual</a></td></tr>
+<tr><td><b>[PR]</b></td><td><a href="pr.za.djf.png">DJF</a></td><td><a href="pr.za.mam.png">MAM</a></td><td><a href="pr.za.jja.png">JJA</a></td><td><a href="pr.za.son.png">SON</a></td><td><a href="pr.za.ann.png">Annual</a></td></tr>
+<tr><td><b>SND</b></td><td>DJF</td><td>MAM</td><td>JJA</td><td>SON</td><td>Annual</td></tr>
+<tr><td><b>SIC NH</b></td><td>DJF</td><td>MAM</td><td>JJA</td><td>SON</td><td>Annual</td></tr>
+<tr><td><b>SIC SH</b></td><td>DJF</td><td>MAM</td><td>JJA</td><td>SON</td><td>Annual</td></tr>
+</table></div></div>
+<div class="row">
+<div class="col">
+<table class="table table-striped table-bordered">
+<h3 class="display-6">Standard Deviations</h3>
+<tr><td><b>SST</b></td><td><a href="sst.stddev.djf.png">DJF</a></td><td><a href="sst.stddev.mam.png">MAM</a></td><td><a href="sst.stddev.jja.png">JJA</a></td><td><a href="sst.stddev.son.png">SON</a></td><td><a href="sst.stddev.ann.png">Annual</a></td></tr>
+<tr><td><b>TAS</b></td><td><a href="tas.stddev.djf.png">DJF</a></td><td><a href="tas.stddev.mam.png">MAM</a></td><td><a href="tas.stddev.jja.png">JJA</a></td><td><a href="tas.stddev.son.png">SON</a></td><td><a href="tas.stddev.ann.png">Annual</a></td></tr>
+<tr><td><b>PSL</b></td><td><a href="psl.stddev.djf.png">DJF</a></td><td><a href="psl.stddev.mam.png">MAM</a></td><td><a href="psl.stddev.jja.png">JJA</a></td><td><a href="psl.stddev.son.png">SON</a></td><td><a href="psl.stddev.ann.png">Annual</a></td></tr>
+<tr><td><b>PR</b></td><td><a href="pr.stddev.djf.png">DJF</a></td><td><a href="pr.stddev.mam.png">MAM</a></td><td><a href="pr.stddev.jja.png">JJA</a></td><td><a href="pr.stddev.son.png">SON</a></td><td><a href="pr.stddev.ann.png">Annual</a></td></tr>
+<tr><td><b>SND</b></td><td>DJF</td><td>MAM</td><td>JJA</td><td>SON</td><td>Annual</td></tr>
+<tr><td><b>SIC NH</b></td><td>DJF</td><td>MAM</td><td>JJA</td><td>SON</td><td>Annual</td></tr>
+<tr><td><b>SIC SH</b></td><td>DJF</td><td>MAM</td><td>JJA</td><td>SON</td><td>Annual</td></tr>
+</table></div></div>
+<div class="row">
+<div class="col">
+<table class="table table-bordered">
+<h3 class="display-6">Coupled Modes of Variability</h3>
+<tr><td rowspan=5><b>ENSO</b></td>
+<td rowspan=2>Spatial Composites</td><td>SST/TAS/PSL<br><a href="nino34.spatialcomp.jja0.png">JJA<sup>0</sup></a> <a href="nino34.spatialcomp.son0.png">SON<sup>0</sup></a><br><a href="nino34.spatialcomp.djf1.png">DJF<sup>+1</sup></a> <a href="nino34.spatialcomp.mam1.png">MAM<sup>+1</sup></a></td>
+<td>PR<br><a href="nino34.spatialcomp.pr.jja0.png">JJA<sup>0</sup></a> <a href="nino34.spatialcomp.pr.son0.png">SON<sup>0</sup></a><br><a href="nino34.spatialcomp.pr.djf1.png">DJF<sup>+1</sup></a> <a href="nino34.spatialcomp.pr.mam1.png">MAM<sup>+1</sup></a></td></tr>
+<tr><td><a href="nino34.hov.elnino.png">El Ni&ntilde;o Hovm&ouml;ller</a></td><td><a href="nino34.hov.lanina.png">La Ni&ntilde;a Hovm&ouml;ller</a></td></tr>
+<tr class=s1><td rowspan=3>Ni&ntilde;o3.4</td><td><a href="nino34.timeseries.png">Timeseries</a></td><td><a href="nino34.powspec.png">Power Spectra</a></td></tr>
+<tr><td><a href="nino34.monstddev.png">Monthly  Std. Dev.</a></td><td><a href="nino34.runstddev.png">Running Std. Dev.</a></td></tr>
+<tr><td><a href="nino34.autocor.png">Autocorrelation</a></td><td><a href="nino34.wavelet.png">Wavelet Analysis</a></td></tr>
+<tr><td><b>PDO</b></td>
+<td>Regr: &nbsp;<a href="pdo.png">SST</a>&nbsp;<a href="pdo.tasreg.png">TAS</a>&nbsp;<a href="pdo.prreg.png">PR</a></td>
+<td><a href="pdo.timeseries.png">Timeseries</a></td>
+<td><a href="pdo.powspec.png">Power Spectra</a></td></tr>
+<tr><td><b>IPO</b></td>
+<td>Regr: &nbsp;<a href="ipo.png">SST</a>&nbsp<a href="ipo.tasreg.png">TAS</a>&nbsp;<a href="ipo.prreg.png">PR</a></td>
+<td><a href="ipo.timeseries.png">Timeseries</a></td>
+<td><a href="ipo.powspec.png">Power Spectra</a></td></tr>
+<tr><td rowspan=2><b>AMO</b></td>
+<td>Regr: &nbsp;<a href="amo.png">SST</a>&nbsp;<a href="amo.tasreg.png">TAS</a>&nbsp;<a href="amo.prreg.png">PR</a></td>
+<td rowspan=2><a href="amo.timeseries.png">Timeseries</a></td>
+<td rowspan=2><a href="amo.powspec.png">Power Spectra</a></td></tr>
+<tr><td>Regr LP: &nbsp;<a href="amo.lp.png">SST</a>&nbsp;<a href="amo.lp.tasreg.png">TAS</a>&nbsp;<a href="amo.lp.prreg.png">PR</a></td></tr>
+<tr><td rowspan=3><b>AMOC</b></td>
+<td>Means</td>
+<td>Standard Deviations</td>
+<td>Patterns</td></tr>
+<tr><td>Timeseries</td>
+<td>SST Regressions</td>
+<td>TAS Regressions</td></tr>
+<tr><td>Spectra</td>
+<td colspan=2>AMO/AMOC Lag Correlations</td></tr></table></div></div>
+<div class="row">
+<div class="col">
+<table class="table table-striped table-bordered">
+<h3 class="display-6">Atmospheric Modes of Variability</h3>
+<tr><td rowspan=4><b>NAM</b></td>
+<td>Patterns</td><td><a href="nam.djf.png">DJF</a></td><td><a href="nam.mam.png">MAM</a></td>
+<td><a href="nam.jja.png">JJA</a></td><td><a href="nam.son.png">SON</a></td>
+<td><a href="nam.ann.png">Annual</a></td><td><a href="nam.mon.png">Monthly</a></td></tr>
+<tr><td>Timeseries</td><td><a href="nam.timeseries.djf.png">DJF</a></td><td><a href="nam.timeseries.mam.png">MAM</a></td>
+<td><a href="nam.timeseries.jja.png">JJA</a></td><td><a href="nam.timeseries.son.png">SON</a></td>
+<td><a href="nam.timeseries.ann.png">Annual</a></td><td><a href="nam.timeseries.mon.png">Monthly</a></td></tr>
+<tr><td>SST/TAS Regressions</td><td><a href="nam.tempreg.djf.png">DJF</a></td><td><a href="nam.tempreg.mam.png">MAM</a></td>
+<td><a href="nam.tempreg.jja.png">JJA</a></td><td><a href="nam.tempreg.son.png">SON</a></td>
+<td><a href="nam.tempreg.ann.png">Annual</a></td><td><a href="nam.tempreg.mon.png">Monthly</a></td></tr>
+<tr><td>PR Regressions</td><td><a href="nam.prreg.djf.png">DJF</a></td><td><a href="nam.prreg.mam.png">MAM</a></td>
+<td><a href="nam.prreg.jja.png">JJA</a></td><td><a href="nam.prreg.son.png">SON</a></td>
+<td><a href="nam.prreg.ann.png">Annual</a></td><td><a href="nam.prreg.mon.png">Monthly</a></td></tr>
+
+<tr><td rowspan=4><b>SAM</b></td>
+<td>Patterns</td><td><a href="sam.djf.png">DJF</a></td><td><a href="sam.mam.png">MAM</a></td>
+<td><a href="sam.jja.png">JJA</a></td><td><a href="sam.son.png">SON</a></td>
+<td><a href="sam.ann.png">Annual</a></td><td><a href="sam.mon.png">Monthly</a></td></tr>
+<tr><td>Timeseries</td><td><a href="sam.timeseries.djf.png">DJF</a></td><td><a href="sam.timeseries.mam.png">MAM</a></td>
+<td><a href="sam.timeseries.jja.png">JJA</a></td><td><a href="sam.timeseries.son.png">SON</a></td>
+<td><a href="sam.timeseries.ann.png">Annual</a></td><td><a href="sam.timeseries.mon.png">Monthly</a></td></tr>
+<tr><td>SST/TAS Regressions</td><td><a href="sam.tempreg.djf.png">DJF</a></td><td><a href="sam.tempreg.mam.png">MAM</a></td>
+<td><a href="sam.tempreg.jja.png">JJA</a></td><td><a href="sam.tempreg.son.png">SON</a></td>
+<td><a href="sam.tempreg.ann.png">Annual</a></td><td><a href="sam.tempreg.mon.png">Monthly</a></td></tr>
+<tr><td>PR Regressions</td><td><a href="sam.prreg.djf.png">DJF</a></td><td><a href="sam.prreg.mam.png">MAM</a></td>
+<td><a href="sam.prreg.jja.png">JJA</a></td><td><a href="sam.prreg.son.png">SON</a></td>
+<td><a href="sam.prreg.ann.png">Annual</a></td><td><a href="sam.prreg.mon.png">Monthly</a></td></tr>
+
+<tr><td rowspan=4><b>NAO</b></td>
+<td>Patterns</td><td><a href="nao.djf.png">DJF</a></td><td><a href="nao.mam.png">MAM</a></td>
+<td><a href="nao.jja.png">JJA</a></td><td><a href="nao.son.png">SON</a></td>
+<td><a href="nao.ann.png">Annual</a></td><td><a href="nao.mon.png">Monthly</a></td></tr>
+<tr><td>Timeseries</td><td><a href="nao.timeseries.djf.png">DJF</a></td><td><a href="nao.timeseries.mam.png">MAM</a></td>
+<td><a href="nao.timeseries.jja.png">JJA</a></td><td><a href="nao.timeseries.son.png">SON</a></td>
+<td><a href="nao.timeseries.ann.png">Annual</a></td><td><a href="nao.timeseries.mon.png">Monthly</a></td></tr>
+<tr><td>SST/TAS Regressions</td><td><a href="nao.tempreg.djf.png">DJF</a></td><td><a href="nao.tempreg.mam.png">MAM</a></td>
+<td><a href="nao.tempreg.jja.png">JJA</a></td><td><a href="nao.tempreg.son.png">SON</a></td>
+<td><a href="nao.tempreg.ann.png">Annual</a></td><td><a href="nao.tempreg.mon.png">Monthly</a></td></tr>
+<tr><td>PR Regressions</td><td><a href="nao.prreg.djf.png">DJF</a></td><td><a href="nao.prreg.mam.png">MAM</a></td>
+<td><a href="nao.prreg.jja.png">JJA</a></td><td><a href="nao.prreg.son.png">SON</a></td>
+<td><a href="nao.prreg.ann.png">Annual</a></td><td><a href="nao.prreg.mon.png">Monthly</a></td></tr>
+
+<tr><td rowspan=4><b>PNA</b></td>
+<td>Patterns</td><td><a href="pna.djf.png">DJF</a></td><td><a href="pna.mam.png">MAM</a></td>
+<td><a href="pna.jja.png">JJA</a></td><td><a href="pna.son.png">SON</a></td>
+<td><a href="pna.ann.png">Annual</a></td><td><a href="pna.mon.png">Monthly</a></td></tr>
+<tr><td>Timeseries</td><td><a href="pna.timeseries.djf.png">DJF</a></td><td><a href="pna.timeseries.mam.png">MAM</a></td>
+<td><a href="pna.timeseries.jja.png">JJA</a></td><td><a href="pna.timeseries.son.png">SON</a></td>
+<td><a href="pna.timeseries.ann.png">Annual</a></td><td><a href="pna.timeseries.mon.png">Monthly</a></td></tr>
+<tr><td>SST/TAS Regressions</td><td><a href="pna.tempreg.djf.png">DJF</a></td><td><a href="pna.tempreg.mam.png">MAM</a></td>
+<td><a href="pna.tempreg.jja.png">JJA</a></td><td><a href="pna.tempreg.son.png">SON</a></td>
+<td><a href="pna.tempreg.ann.png">Annual</a></td><td><a href="pna.tempreg.mon.png">Monthly</a></td></tr>
+<tr><td>PR Regressions</td><td><a href="pna.prreg.djf.png">DJF</a></td><td><a href="pna.prreg.mam.png">MAM</a></td>
+<td><a href="pna.prreg.jja.png">JJA</a></td><td><a href="pna.prreg.son.png">SON</a></td>
+<td><a href="pna.prreg.ann.png">Annual</a></td><td><a href="pna.prreg.mon.png">Monthly</a></td></tr>
+
+<tr><td rowspan=4><b>NPO</b></td>
+<td>Patterns</td><td><a href="npo.djf.png">DJF</a></td><td><a href="npo.mam.png">MAM</a></td>
+<td><a href="npo.jja.png">JJA</a></td><td><a href="npo.son.png">SON</a></td>
+<td><a href="npo.ann.png">Annual</a></td><td><a href="npo.mon.png">Monthly</a></td></tr>
+<tr><td>Timeseries</td><td><a href="npo.timeseries.djf.png">DJF</a></td><td><a href="npo.timeseries.mam.png">MAM</a></td>
+<td><a href="npo.timeseries.jja.png">JJA</a></td><td><a href="npo.timeseries.son.png">SON</a></td>
+<td><a href="npo.timeseries.ann.png">Annual</a></td><td><a href="npo.timeseries.mon.png">Monthly</a></td></tr>
+<tr><td>SST/TAS Regressions</td><td><a href="npo.tempreg.djf.png">DJF</a></td><td><a href="npo.tempreg.mam.png">MAM</a></td>
+<td><a href="npo.tempreg.jja.png">JJA</a></td><td><a href="npo.tempreg.son.png">SON</a></td>
+<td><a href="npo.tempreg.ann.png">Annual</a></td><td><a href="npo.tempreg.mon.png">Monthly</a></td></tr>
+<tr><td>PR Regressions</td><td><a href="npo.prreg.djf.png">DJF</a></td><td><a href="npo.prreg.mam.png">MAM</a></td>
+<td><a href="npo.prreg.jja.png">JJA</a></td><td><a href="npo.prreg.son.png">SON</a></td>
+<td><a href="npo.prreg.ann.png">Annual</a></td><td><a href="npo.prreg.mon.png">Monthly</a></td></tr>
+
+<tr><td rowspan=4><b>PSA1</b></td>
+<td>Patterns</td><td><a href="psa1.djf.png">DJF</a></td><td><a href="psa1.mam.png">MAM</a></td>
+<td><a href="psa1.jja.png">JJA</a></td><td><a href="psa1.son.png">SON</a></td>
+<td><a href="psa1.ann.png">Annual</a></td><td><a href="psa1.mon.png">Monthly</a></td></tr>
+<tr><td>Timeseries</td><td><a href="psa1.timeseries.djf.png">DJF</a></td><td><a href="psa1.timeseries.mam.png">MAM</a></td>
+<td><a href="psa1.timeseries.jja.png">JJA</a></td><td><a href="psa1.timeseries.son.png">SON</a></td>
+<td><a href="psa1.timeseries.ann.png">Annual</a></td><td><a href="psa1.timeseries.mon.png">Monthly</a></td></tr>
+<tr><td>SST/TAS Regressions</td><td><a href="psa1.tempreg.djf.png">DJF</a></td><td><a href="psa1.tempreg.mam.png">MAM</a></td>
+<td><a href="psa1.tempreg.jja.png">JJA</a></td><td><a href="psa1.tempreg.son.png">SON</a></td>
+<td><a href="psa1.tempreg.ann.png">Annual</a></td><td><a href="psa1.tempreg.mon.png">Monthly</a></td></tr>
+<tr><td>PR Regressions</td><td><a href="psa1.prreg.djf.png">DJF</a></td><td><a href="psa1.prreg.mam.png">MAM</a></td>
+<td><a href="psa1.prreg.jja.png">JJA</a></td><td><a href="psa1.prreg.son.png">SON</a></td>
+<td><a href="psa1.prreg.ann.png">Annual</a></td><td><a href="psa1.prreg.mon.png">Monthly</a></td></tr>
+
+<tr><td rowspan=4><b>PSA2</b></td>
+<td>Patterns</td><td><a href="psa2.djf.png">DJF</a></td><td><a href="psa2.mam.png">MAM</a></td>
+<td><a href="psa2.jja.png">JJA</a></td><td><a href="psa2.son.png">SON</a></td>
+<td><a href="psa2.ann.png">Annual</a></td><td><a href="psa2.mon.png">Monthly</a></td></tr>
+<tr><td>Timeseries</td><td><a href="psa2.timeseries.djf.png">DJF</a></td><td><a href="psa2.timeseries.mam.png">MAM</a></td>
+<td><a href="psa2.timeseries.jja.png">JJA</a></td><td><a href="psa2.timeseries.son.png">SON</a></td>
+<td><a href="psa2.timeseries.ann.png">Annual</a></td><td><a href="psa2.timeseries.mon.png">Monthly</a></td></tr>
+<tr><td>SST/TAS Regressions</td><td><a href="psa2.tempreg.djf.png">DJF</a></td><td><a href="psa2.tempreg.mam.png">MAM</a></td>
+<td><a href="psa2.tempreg.jja.png">JJA</a></td><td><a href="psa2.tempreg.son.png">SON</a></td>
+<td><a href="psa2.tempreg.ann.png">Annual</a></td><td><a href="psa2.tempreg.mon.png">Monthly</a></td></tr>
+<tr><td>PR Regressions</td><td><a href="psa2.prreg.djf.png">DJF</a></td><td><a href="psa2.prreg.mam.png">MAM</a></td>
+<td><a href="psa2.prreg.jja.png">JJA</a></td><td><a href="psa2.prreg.son.png">SON</a></td>
+<td><a href="psa2.prreg.ann.png">Annual</a></td><td><a href="psa2.prreg.mon.png">Monthly</a></td></tr>
+</tr></table></div></div>
+<div class="row">
+<div class="col">
+<table class="table table-striped table-bordered">
+<h3 class="display-6">Ice Extent Timeseries</h3>
+<tr><td rowspan=2><b>SIC NH</b></td><td>DJF</td>
+<td>MAM</td>
+<td>JJA</td>
+<td>SON</td>
+<td>Annual</td>
+<td>Monthly</td></tr>
+<tr><td colspan=2>Feb&nbsp;&nbsp;Mar&nbsp;&nbsp;Sep</td>
+<td colspan=2>Monthly Anomalies</td>
+<td colspan=2>Climatology</td></tr>
+<tr><td rowspan=2><b>SIC SH</b></td><td>DJF</td>
+<td>MAM</td>
+<td>JJA</td>
+<td>SON</td>
+<td>Annual</td>
+<td>Monthly</td></tr>
+<tr><td colspan=2>Feb&nbsp;&nbsp;Mar&nbsp;&nbsp;Sep</td>
+<td colspan=2>Monthly Anomalies</td>
+<td colspan=2>Climatology</td></tr></table></div></div>
+<div class="row">
+<div class="col">
+<table class="table table-striped table-bordered">
+<h3 class="display-6">Global Trend Maps</h3>
+<tr><td><b>SST</b></td><td><a href="sst.trends.djf.png">DJF</a></td>
+<td><a href="sst.trends.mam.png">MAM</a></td>
+<td><a href="sst.trends.jja.png">JJA</a></td>
+<td><a href="sst.trends.son.png">SON</a></td>
+<td><a href="sst.trends.ann.png">Annual</a></td>
+<td><a href="sst.trends.mon.png">Monthly</a></td></tr>
+<tr><td><b>TAS</b></td><td><a href="tas.trends.djf.png">DJF</a></td>
+<td><a href="tas.trends.mam.png">MAM</a></td>
+<td><a href="tas.trends.jja.png">JJA</a></td>
+<td><a href="tas.trends.son.png">SON</a></td>
+<td><a href="tas.trends.ann.png">Annual</a></td>
+<td><a href="tas.trends.mon.png">Monthly</a></td></tr>
+<tr><td><b>PSL</b></td><td><a href="psl.trends.djf.png">DJF</a></td>
+<td><a href="psl.trends.mam.png">MAM</a></td>
+<td><a href="psl.trends.jja.png">JJA</a></td>
+<td><a href="psl.trends.son.png">SON</a></td>
+<td><a href="psl.trends.ann.png">Annual</a></td>
+<td><a href="psl.trends.mon.png">Monthly</a></td></tr>
+<tr><td><b>PR</b></td><td><a href="pr.trends.djf.png">DJF</a></td>
+<td><a href="pr.trends.mam.png">MAM</a></td>
+<td><a href="pr.trends.jja.png">JJA</a></td>
+<td><a href="pr.trends.son.png">SON</a></td>
+<td><a href="pr.trends.ann.png">Annual</a></td>
+<td><a href="pr.trends.mon.png">Monthly</a></td></tr>
+<tr><td><b>SND</b></td><td>DJF</td>
+<td>MAM</td>
+<td>JJA</td>
+<td>SON</td>
+<td>Annual</td>
+<td>Monthly</td></tr>
+<tr><td><b>SIC NH</b></td><td>DJF</td>
+<td>MAM</td>
+<td>JJA</td>
+<td>SON</td>
+<td>Annual</td>
+<td>Monthly</td></tr>
+<tr><td><b>SIC SH</b></td><td>DJF</td>
+<td>MAM</td>
+<td>JJA</td>
+<td>SON</td>
+<td>Annual</td>
+<td>Monthly</td></tr></table></div></div>
+<div class="row">
+<div class="col">
+<table class="table table-striped table-bordered">
+<h3 class="display-6">Globally-Averaged Timeseries</h3>
+<tr><td><b>SST</b></td><td><a href="sst.timeseries.djf.png">DJF</a></td>
+<td><a href="sst.timeseries.mam.png">MAM</a></td>
+<td><a href="sst.timeseries.jja.png">JJA</a></td>
+<td><a href="sst.timeseries.son.png">SON</a></td>
+<td><a href="sst.timeseries.ann.png">Annual</a></td>
+<td><a href="sst.timeseries.mon.png">Monthly</a></td></tr>
+<tr><td><b>TAS</b></td><td><a href="tas.timeseries.djf.png">DJF</a></td>
+<td><a href="tas.timeseries.mam.png">MAM</a></td>
+<td><a href="tas.timeseries.jja.png">JJA</a></td>
+<td><a href="tas.timeseries.son.png">SON</a></td>
+<td><a href="tas.timeseries.ann.png">Annual</a></td>
+<td><a href="tas.timeseries.mon.png">Monthly</a></td></tr>
+<tr><td><b>PR</b></td><td><a href="pr.timeseries.djf.png">DJF</a></td>
+<td><a href="pr.timeseries.mam.png">MAM</a></td>
+<td><a href="pr.timeseries.jja.png">JJA</a></td>
+<td><a href="pr.timeseries.son.png">SON</a></td>
+<td><a href="pr.timeseries.ann.png">Annual</a></td>
+<td><a href="pr.timeseries.mon.png">Monthly</a></td></tr>
+</table></div></div>
+<div class="row">
+<div class="col">
+<table class="table table-striped table-bordered">
+<h3 class="display-6">Running Trends of Globally-Averaged Monthly Timeseries</h3>
+<tr><td><b>SST</b></td><td><a href="sst.8yr_runtrend.mon.png">8yr</a></td>
+<td><a href="sst.10yr_runtrend.mon.png">10yr</a></td>
+<td><a href="sst.12yr_runtrend.mon.png">12yr</a></td>
+<td><a href="sst.14yr_runtrend.mon.png">14yr</a></td>
+<td><a href="sst.16yr_runtrend.mon.png">16yr</a></td></tr>
+<tr><td><b>TAS</b></td><td><a href="tas.8yr_runtrend.mon.png">8yr</a></td>
+<td><a href="tas.10yr_runtrend.mon.png">10yr</a></td>
+<td><a href="tas.12yr_runtrend.mon.png">12yr</a></td>
+<td><a href="tas.14yr_runtrend.mon.png">14yr</a></td>
+<td><a href="tas.16yr_runtrend.mon.png">16yr</a></td></tr>
+</table></div></div>
+<div class="row">
+<div class="col">
+<table class="table table-striped table-bordered">
+<h3 class="display-6">Additional Indices</h3>
+<tr><td><a href="amm.timeseries.png">Atlantic Meridional Mode</a></td>
+<td><a href="atl3.timeseries.png">Atlantic Ni&ntilde;o (ATL3)</a></td>
+<td><a href="tna.timeseries.png">Tropical North Atlantic SST</a></td>
+<td><a href="tsa.timeseries.png">Tropical South Atlantic SST</a></td></tr>
+<tr><td><a href="nino12.timeseries.png">ni&ntilde;o1+2</a></td>
+<td><a href="nino3.timeseries.png">ni&ntilde;o3</a></td>
+<td><a href="nino4.timeseries.png">ni&ntilde;o4</a></td>
+<td><a href="npi.timeseries.ndjfm.png">North Pacific PSL</a></td></tr>
+<tr><td><a href="iod.timeseries.png">Indian Ocean SST Dipole</a></td>
+<td><a href="tio.timeseries.png">Tropical Indian Ocean SST</a></td>
+<td><a href="socn.timeseries.png">Southern Ocean SST</a></td></tr>
+</table></div></div>
+<br>
+</body></html>

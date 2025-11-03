@@ -1,0 +1,6 @@
+ERA20C_ERAI | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/era20c_erai.mon.mean.msl.190001-201901.nc | 1920 | 2018
+CERA20C_ERAI | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/cera20c_erai.mon.mean.msl.190101-201901.nc | 1920 | 2018
+ERAI | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/erai.mon.mean.msl.197901-201901.nc | 1979 | 2018
+MERRA2 | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/merra2.mon.SLP.198001-201803.nc | 1980 | 2017
+b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244 | /glade/campaign/cesm/development/cross-wg/diagnostic_framework/CESM_output_for_testing/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244/atm/proc/tseries/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244.cam.h0a.PSL.000101-003212.nc | 1 | 32
+b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234 | /glade/campaign/cesm/development/cross-wg/diagnostic_framework/CESM_output_for_testing/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234/atm/proc/tseries/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234.cam.h0a.PSL.000101-008012.nc | 1 | 80
