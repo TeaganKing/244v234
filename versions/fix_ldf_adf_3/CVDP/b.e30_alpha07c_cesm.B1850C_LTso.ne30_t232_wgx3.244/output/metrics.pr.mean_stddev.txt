@@ -1,0 +1,6 @@
+
+Pattern Correlations/RMS Differences   Observations vs. Model(s)
+
+                       GPCC_1       GPCP     GPCP_1 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
+                   ---------- ---------- ---------- -------------------------------------------------- --------------------------------------------------
+pr Std Dev (Ann)    1.00/0.00  0.91/0.17  0.91/0.17                                          9.99/9.99                                          0.83/0.25

@@ -1,0 +1,6 @@
+
+Pattern Correlations/RMS Differences   Observations vs. Model(s)
+
+                      HadISST ERSST v5_1  HadISST_1 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
+                   ---------- ---------- ---------- -------------------------------------------------- --------------------------------------------------
+SST Std Dev (Ann)   0.87/0.08  0.95/0.06  0.87/0.09                                          9.99/9.99                                          0.71/0.23
