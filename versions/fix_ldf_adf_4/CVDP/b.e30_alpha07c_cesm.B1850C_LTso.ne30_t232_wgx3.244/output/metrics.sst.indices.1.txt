@@ -1,0 +1,7 @@
+
+Pattern Correlations/RMS Differences   Observations vs. Model(s)
+
+                      HadISST ERSST v5_1  HadISST_1 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
+                   ---------- ---------- ---------- -------------------------------------------------- --------------------------------------------------
+ENSO TAS (DJF+1)    0.94/0.27  0.86/0.42  0.86/0.42                                          9.99/9.99                                          0.69/0.83
+ENSO PSL (DJF+1)    0.98/0.41  0.94/0.98  0.94/1.00                                          9.99/9.99                                          0.78/1.56

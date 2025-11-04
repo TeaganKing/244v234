@@ -1,0 +1,6 @@
+BEST | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/best.tas.185001-201902.nc | 1920 | 2018
+GISTEMP | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/gistemp.tas.188001-201912.nc | 1920 | 2018
+BEST_1 | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/best.tas.185001-201902.nc | 1979 | 2018
+GISTEMP_1 | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/gistemp.tas.188001-201912.nc | 1980 | 2017
+b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244 | missing | 1 | 32
+b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234 | /glade/campaign/cesm/development/cross-wg/diagnostic_framework/CESM_output_for_testing/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234/atm/proc/tseries/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234.cam.h0a.TREFHT.000101-008012.nc | 1 | 80

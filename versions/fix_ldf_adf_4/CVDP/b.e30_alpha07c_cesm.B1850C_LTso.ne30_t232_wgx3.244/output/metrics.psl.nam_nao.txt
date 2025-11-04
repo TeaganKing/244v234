@@ -1,0 +1,6 @@
+
+Pattern Correlations   Observations vs. Model(s)
+
+                   CERA20C_ERAI       ERAI     MERRA2 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
+                   ------------ ---------- ---------- -------------------------------------------------- --------------------------------------------------
+NAM (DJF)             1.00/0.11  0.98/0.34  0.99/0.25                                          0.95/0.56                                          0.95/0.53

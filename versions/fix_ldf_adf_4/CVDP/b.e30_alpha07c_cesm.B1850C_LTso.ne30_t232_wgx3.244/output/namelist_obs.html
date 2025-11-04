@@ -1,0 +1,70 @@
+<HTML><HEAD><TITLE>Climate Variability Diagnostics Package</TITLE><STYLE>
+body {background-color: WhiteSmoke; font-family: Verdana, Geneva, sans-serif}
+img.title {width:990; height:105; align:left}
+p.subtitle1 {font-size:20pt; color:darkgray}
+p.subtitle {font-size:20pt; color:black; text-align:center; font-weight:bold}
+p.btext {font-size:12pt; text-align:left}
+p.btext2 {font-size:9pt; text-align:left}
+p.c {font-size:9pt; text-align:left, white-space:pre}
+
+td.s1 {text-align:left; font-size:11pt}
+
+
+
+
+
+
+
+
+
+
+td {text-align:center; font-size:12pt}
+td.s1 {text-align:left; font-size:11pt}
+td.tablehdr {text-align:center; font-size:17pt}
+CAPTION {text-align:left; font-size:14pt; font-weight:bold}
+</STYLE></HEAD><BODY>
+<img class="img-fluid" src="cas-cvdp.png" alt="CVDP logo">
+<TABLE width='990' border=0 cellpadding=6>
+<tr><td width='30'><p class=btext>Go to:</p></td><td class=s1 width='380'><a href="index.html">Diagnostics Plots</a><br><hr>
+Input Namelists: <b>Observations</b> | <a href="namelist_simulations.html">Simulations</a><br>
+Derived Namelists: <a href="namelist_msftmz.html">MSFTMZ</a> | <a href="namelist_pr.html">PR</a> | <a href="namelist_psl.html">PSL</a> | 
+<br><a href="namelist_siconc_nh.html">SICONC NH</a> | <a href="namelist_siconc_sh.html">SICONC SH</a> | <a href="namelist_snd.html">SND</a> | <a href="namelist_tas.html">TAS</a> |
+<a href="namelist_ts.html">TS</a></td><td><h2 class="text-center">ADF/CVDP Comparison</h2></td></tr></table><hr width=990 align=left>
+<p class=subtitle1>Input Namelist: Observations</p>
+TS | ERSST v5 | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/ersstv5.185401-201912.nc | 1920 | 2018<br>
+PSL | ERA20C_ERAI | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/era20c_erai.mon.mean.msl.190001-201901.nc | 1920 | 2018<br>
+TREFHT | BEST | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/best.tas.185001-201902.nc | 1920 | 2018<br>
+PRECT | GPCC | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/gpcc.pr.10.comb_v2018v6mon.189101-201903.nc | 1920 | 2018<br>
+aice_nh | Walsh and Chapman | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/walsh_chapman.NH.seaice.187001-201112.nc | 1953 | 2011<br>
+aice_sh | NASA Bootstrap SH | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/seaice_conc_monthly_sh_NASA_Bootstrap.nsidc.v03r01.197811-201702.nc | 1979 | 2016<br>
+MOC | CESM1 Forced Ocean Simulation | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/g.e11_LENS.GECOIAF.T62_g16.009.pop.h.MOC.194801-201512.nc | 1948 | 2015<br>
+<br>
+TS | HadISST | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/hadisst.187001-201912.nc | 1920 | 2018<br>
+PSL | CERA20C_ERAI | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/cera20c_erai.mon.mean.msl.190101-201901.nc | 1920 | 2018<br>
+TREFHT | GISTEMP | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/gistemp.tas.188001-201912.nc | 1920 | 2018<br>
+PRECT | GPCC | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/gpcc.pr.10.comb_v2018v6mon.189101-201903.nc | 1920 | 2018<br>
+aice_nh | Walsh and Chapman | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/walsh_chapman.NH.seaice.187001-201112.nc | 1953 | 2011<br>
+aice_sh | NASA Bootstrap SH | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/seaice_conc_monthly_sh_NASA_Bootstrap.nsidc.v03r01.197811-201702.nc | 1979 | 2016<br>
+MOC | CESM1 Forced Ocean Simulation | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/g.e11_LENS.GECOIAF.T62_g16.009.pop.h.MOC.194801-201512.nc | 1948 | 2015<br>
+<br>
+TS | ERSST v5 | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/ersstv5.185401-201912.nc | 1979 | 2018<br>
+PSL | ERAI | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/erai.mon.mean.msl.197901-201901.nc | 1979 | 2018<br>
+TREFHT | BEST | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/best.tas.185001-201902.nc | 1979 | 2018<br>
+PRECT | GPCP | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/gpcp.mon.mean.197901-201903.nc | 1979 | 2018<br>
+aice_nh | NASA CDR NH | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/seaice_conc_monthly_nh_NOAA_NSIDC_CDR.v03r01.197811-201702.nc | 1979 | 2016<br>
+aice_sh | NASA CDR SH | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/seaice_conc_monthly_sh_NOAA_NSIDC_CDR.v03r01.197811-201702.nc | 1979 | 2016<br>
+MOC | CESM1 Forced Ocean Simulation | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/g.e11_LENS.GECOIAF.T62_g16.009.pop.h.MOC.194801-201512.nc | 1979 | 2015<br>
+<br>
+TS | HadISST | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/hadisst.187001-201912.nc | 1980 | 2017<br>
+PSL | MERRA2 | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/merra2.mon.SLP.198001-201803.nc | 1980 | 2017<br>
+TREFHT | GISTEMP | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/gistemp.tas.188001-201912.nc | 1980 | 2017<br>
+PRECT | GPCP | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/gpcp.mon.mean.197901-201903.nc | 1980 | 2017<br>
+aice_nh | NASA Bootstrap NH | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/seaice_conc_monthly_nh_NASA_Bootstrap.nsidc.v03r01.197811-201702.nc | 1980 | 2016<br>
+aice_sh | NASA Bootstrap SH | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/seaice_conc_monthly_sh_NASA_Bootstrap.nsidc.v03r01.197811-201702.nc | 1980 | 2016<br>
+MOC | CESM1 Forced Ocean Simulation | /glade/campaign/cgd/cas/asphilli/CVDP-OBS/g.e11_LENS.GECOIAF.T62_g16.009.pop.h.MOC.194801-201512.nc | 1980 | 2015<br>
+<br>
+
+</p>
+Created Mon 03 Nov 2025 02:22:23 PM MST
+<p class=btext2>CVDP Version 5.2.0</p></body></html>
+

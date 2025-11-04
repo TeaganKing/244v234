@@ -1,0 +1,2143 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ROF monthly, annual, seasonal discharge at ocean outlets &#8212; CESM Key Metrics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rof/global_discharge_ocean_compare_obs';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="ROF global monthly, annual, seasonal flows analysis" href="global_discharge_gauge_compare_obs.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../infrastructure/index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">CESM Key Metrics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Atmosphere</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../atm/Global_PSL_NMSE_compare_obs_lens.html">SLP (NMSE)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../atm/CVDP.html">CVDP</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Land</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lnd/Global_TerrestrialCouplingIndex_VisualCompareObs.html">Land-atmosphere coupling indices &amp; Observational Data Comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lnd/LDF.html">LDF</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sea Ice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ice/Hemis_seaice_visual_compare_obs_lens.html">Sea Ice Diagnostics and LENS comparison</a></li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Land Ice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../glc/Greenland_SMB_visual_compare_obs.html">Greenland Ice Sheet SMB comparison with MAR</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">River Runoff</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="global_discharge_gauge_compare_obs.html">ROF global monthly, annual, seasonal flows analysis <a id="top"></a></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">ROF monthly, annual, seasonal discharge at ocean outlets <a id="top"></a></a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://jupyterhub.hpc.ucar.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/executablebooks/jupyter-book&urlpath=lab/tree/jupyter-book/rof/global_discharge_ocean_compare_obs.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/rof/global_discharge_ocean_compare_obs.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>ROF monthly, annual, seasonal discharge at ocean outlets <a id='top'></a></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">1. Setup <a id="configuration"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dasks-optional">dasks (optional)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-discharge-data">2. Loading discharge data <a id="load_q"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monthly-annual-flow-netcdfs">2.1. Monthly/annual flow netCDFs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d19-discharge-data">2.2 D19 discharge data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-river-catchment-gauge-infomation">3. Reading river, catchment, gauge infomation  <a id="read_ancillary"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reach-d19-gauge-link-csv">3.1. reach-D19 gauge link csv</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d19-flow-site-geopackage">3.2 D19 flow site geopackage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ocean-polygon-geopackage">3.3 Ocean polygon geopackage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-river-network-information">3.4 Read river network information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-river-outlet-information">3.5 Read river outlet information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merge-gauge-outlet-catchment-dataframe">3.6 Merge gauge, outlet catchment dataframe</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-annual-cycle-for-global-oceans">4. Plot annual cycle for global oceans <a id="annual_cycle_q"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-zonal-mean-annual-dicharge-to-the-oceans">5. Plot zonal mean annual dicharge to the oceans <a id="zonal_mean_annual_q"></a></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="rof-monthly-annual-seasonal-discharge-at-ocean-outlets">
+<h1>ROF monthly, annual, seasonal discharge at ocean outlets <a id='top'></a><a class="headerlink" href="#rof-monthly-annual-seasonal-discharge-at-ocean-outlets" title="Link to this heading">#</a></h1>
+<p>Use the following datasets</p>
+<ol class="arabic simple">
+<li><p>reach-D19 gauge link ascii</p></li>
+<li><p>D19 flow site geopackage</p></li>
+<li><p>D19 discharge netCDF</p></li>
+<li><p>monthly and yearly flow netCD (history file)</p></li>
+</ol>
+<p><a class="reference internal" href="#configuration"><span class="xref myst">1. Setup</span></a></p>
+<p><a class="reference internal" href="#load_q"><span class="xref myst">2. Loading discharge data</span></a></p>
+<ul class="simple">
+<li><p>Read monthly history files from archive.</p></li>
+<li><p>Reference data: monthly discharge estimates at 922 big river mouths from Dai et al. 2019 data (D19)</p></li>
+</ul>
+<p><a class="reference internal" href="#read_ancillary"><span class="xref myst">3. Read river, catchment, gauge information</span></a></p>
+<ul class="simple">
+<li><p>catchment polygon (geopackage)</p></li>
+<li><p>gauge point (geopackage)</p></li>
+<li><p>gauge-catchment link (csv)</p></li>
+<li><p>outlet reach information (netCDF) including discharging ocean names</p></li>
+</ul>
+<p><a class="reference internal" href="#annual_cycle_q"><span class="xref myst">4. Ocean discharge line plots</span></a></p>
+<ul class="simple">
+<li><p>total seasonal flow for oceans.</p></li>
+</ul>
+<p><a class="reference internal" href="#zonal_mean_annual_q"><span class="xref myst">5. Plot zonal mean annual dicharge to the oceans</span></a></p>
+<ul class="simple">
+<li><p>total seasonal flow for oceans.</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">xarray</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xr</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">cartopy.feature</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">cfeature</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">scripts.utility</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_yaml</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scripts.utility</span><span class="w"> </span><span class="kn">import</span> <span class="n">no_time_variable</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scripts.utility</span><span class="w"> </span><span class="kn">import</span> <span class="n">read_shps</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scripts.utility</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_index_array</span>
+
+<span class="n">rivers_50m</span> <span class="o">=</span> <span class="n">cfeature</span><span class="o">.</span><span class="n">NaturalEarthFeature</span><span class="p">(</span><span class="s2">&quot;physical&quot;</span><span class="p">,</span> <span class="s2">&quot;rivers_lake_centerlines&quot;</span><span class="p">,</span> <span class="s2">&quot;50m&quot;</span><span class="p">)</span>
+<span class="n">land</span> <span class="o">=</span> <span class="n">cfeature</span><span class="o">.</span><span class="n">LAND</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">The Python version: </span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">xr</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">xr</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">gpd</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">gpd</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The Python version: 3.11.4
+xarray 2025.6.1
+pandas 2.3.3
+geopandas 1.1.1
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ERROR 1: PROJ: proj_create_from_database: Open of /glade/work/tking/conda-envs/cupid-analysis/share/proj failed
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<section id="setup">
+<h2>1. Setup <a id='configuration'></a><a class="headerlink" href="#setup" title="Link to this heading">#</a></h2>
+<div class="cell tag_parameters tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Parameter Defaults</span>
+<span class="c1"># parameters are set in CUPiD&#39;s config.yml file</span>
+<span class="c1"># when running interactively, manually set the parameters below</span>
+
+<span class="n">CESM_output_dir</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">case_name</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># case name: e.g., &quot;b.e30_beta02.BLT1850.ne30_t232.104&quot;</span>
+<span class="n">base_case_name</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># base case name: e.g., &quot;b.e23_alpha17f.BLT1850.ne30_t232.092&quot;</span>
+<span class="n">base_case_output_dir</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">start_date</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">end_date</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">base_start_date</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># base simulation starting date: &quot;0001-01-01&quot;</span>
+<span class="n">base_end_date</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># base simulation ending date: &quot;0100-01-01&quot;</span>
+<span class="n">serial</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># use dask LocalCluster</span>
+<span class="n">lc_kwargs</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">hist_str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># Used for hist file tag</span>
+<span class="n">analysis_name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># Used for Figure png names</span>
+<span class="n">climo_nyears</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># number of years to compute the climatology</span>
+<span class="n">grid_name</span> <span class="o">=</span> <span class="s2">&quot;f09_f09_mosart&quot;</span>  <span class="c1"># ROF grid name used in case</span>
+<span class="n">base_grid_name</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">grid_name</span>  <span class="c1"># spcify ROF grid name for base_case in config.yml if different than case</span>
+<span class="p">)</span>
+<span class="n">figureSave</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell tag_injected-parameters docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Parameters</span>
+<span class="n">case_name</span> <span class="o">=</span> <span class="s2">&quot;b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244&quot;</span>
+<span class="n">base_case_name</span> <span class="o">=</span> <span class="s2">&quot;b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234&quot;</span>
+<span class="n">case_nickname</span> <span class="o">=</span> <span class="s2">&quot;BLT1850_244&quot;</span>
+<span class="n">base_case_nickname</span> <span class="o">=</span> <span class="s2">&quot;BLT1850_234&quot;</span>
+<span class="n">CESM_output_dir</span> <span class="o">=</span> <span class="s2">&quot;/glade/campaign/cesm/development/cross-wg/diagnostic_framework/CESM_output_for_testing&quot;</span>
+<span class="n">start_date</span> <span class="o">=</span> <span class="s2">&quot;0001-01-01&quot;</span>
+<span class="n">end_date</span> <span class="o">=</span> <span class="s2">&quot;0033-01-01&quot;</span>
+<span class="n">climo_start_year</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">climo_end_year</span> <span class="o">=</span> <span class="mi">33</span>
+<span class="n">base_start_date</span> <span class="o">=</span> <span class="s2">&quot;0001-01-01&quot;</span>
+<span class="n">base_end_date</span> <span class="o">=</span> <span class="s2">&quot;0081-01-01&quot;</span>
+<span class="n">base_climo_start_year</span> <span class="o">=</span> <span class="mi">61</span>
+<span class="n">base_climo_end_year</span> <span class="o">=</span> <span class="mi">81</span>
+<span class="n">obs_data_dir</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;/glade/campaign/cesm/development/cross-wg/diagnostic_framework/CUPiD_obs_data&quot;</span>
+<span class="p">)</span>
+<span class="n">ts_dir</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">lc_kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;threads_per_worker&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+<span class="n">serial</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">hist_str</span> <span class="o">=</span> <span class="s2">&quot;h0a&quot;</span>
+<span class="n">analysis_name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">grid_name</span> <span class="o">=</span> <span class="s2">&quot;f09_f09_mosart&quot;</span>
+<span class="n">climo_nyears</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">figureSave</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">subset_kwargs</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">product</span> <span class="o">=</span> <span class="s2">&quot;/glade/work/tking/cupid_project/other_cupids/234v244/CUPiD/examples/key_metrics/computed_notebooks//rof/global_discharge_ocean_compare_obs.ipynb&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">base_case_output_dir</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">base_case_output_dir</span> <span class="o">=</span> <span class="n">CESM_output_dir</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ROF additional setup</span>
+<span class="n">setup</span> <span class="o">=</span> <span class="n">load_yaml</span><span class="p">(</span><span class="s2">&quot;./setup/setup.yaml&quot;</span><span class="p">)</span>
+
+<span class="n">domain_dir</span> <span class="o">=</span> <span class="n">setup</span><span class="p">[</span>
+    <span class="s2">&quot;ancillary_dir&quot;</span>
+<span class="p">]</span>  <span class="c1"># ancillary directory including such as ROF domain, river network data</span>
+<span class="n">geospatial_dir</span> <span class="o">=</span> <span class="n">setup</span><span class="p">[</span><span class="s2">&quot;geospatial_dir&quot;</span><span class="p">]</span>  <span class="c1"># including shapefiles or geopackages</span>
+<span class="n">ref_flow_dir</span> <span class="o">=</span> <span class="n">setup</span><span class="p">[</span><span class="s2">&quot;ref_flow_dir&quot;</span><span class="p">]</span>  <span class="c1"># including observed or reference flow data</span>
+<span class="n">case_meta</span> <span class="o">=</span> <span class="n">setup</span><span class="p">[</span><span class="s2">&quot;case_meta&quot;</span><span class="p">]</span>  <span class="c1"># RO grid meta</span>
+<span class="n">catch_gpkg</span> <span class="o">=</span> <span class="n">setup</span><span class="p">[</span><span class="s2">&quot;catch_gpkg&quot;</span><span class="p">]</span>  <span class="c1"># catchment geopackage meta</span>
+<span class="n">reach_gpkg</span> <span class="o">=</span> <span class="n">setup</span><span class="p">[</span><span class="s2">&quot;reach_gpkg&quot;</span><span class="p">]</span>  <span class="c1"># reach geopackage meta</span>
+<span class="n">network_nc</span> <span class="o">=</span> <span class="n">setup</span><span class="p">[</span><span class="s2">&quot;river_network&quot;</span><span class="p">]</span>  <span class="c1"># river network meta</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">analysis_name</span><span class="p">:</span>
+    <span class="n">analysis_name</span> <span class="o">=</span> <span class="n">case_name</span>
+<span class="k">if</span> <span class="n">base_grid_name</span><span class="p">:</span>
+    <span class="n">base_grid_name</span> <span class="o">=</span> <span class="n">grid_name</span>
+
+<span class="n">case_dic</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">case_name</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;grid&quot;</span><span class="p">:</span> <span class="n">grid_name</span><span class="p">,</span>
+        <span class="s2">&quot;sim_period&quot;</span><span class="p">:</span> <span class="nb">slice</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">start_date</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">end_date</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;climo_nyrs&quot;</span><span class="p">:</span> <span class="nb">min</span><span class="p">(</span><span class="n">climo_nyears</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">end_date</span><span class="p">[:</span><span class="mi">4</span><span class="p">])</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">start_date</span><span class="p">[:</span><span class="mi">4</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="s2">&quot;output_dir&quot;</span><span class="p">:</span> <span class="n">CESM_output_dir</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="n">base_case_name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">case_dic</span><span class="p">[</span><span class="n">base_case_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;grid&quot;</span><span class="p">:</span> <span class="n">grid_name</span><span class="p">,</span>
+        <span class="s2">&quot;sim_period&quot;</span><span class="p">:</span> <span class="nb">slice</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">base_start_date</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">base_end_date</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;climo_nyrs&quot;</span><span class="p">:</span> <span class="nb">min</span><span class="p">(</span>
+            <span class="n">climo_nyears</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">base_end_date</span><span class="p">[:</span><span class="mi">4</span><span class="p">])</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">base_start_date</span><span class="p">[:</span><span class="mi">4</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="p">),</span>
+        <span class="s2">&quot;output_dir&quot;</span><span class="p">:</span> <span class="n">base_case_output_dir</span><span class="p">,</span>
+    <span class="p">}</span>
+
+<span class="n">oceans_list</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;arctic&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;atlantic&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;indian&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mediterranean&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;pacific&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;south_china&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;global&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<hr class="docutils" />
+<section id="dasks-optional">
+<h3>dasks (optional)<a class="headerlink" href="#dasks-optional" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># When running interactively, cupid_run should be set to False</span>
+<span class="n">cupid_run</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="k">if</span> <span class="n">cupid_run</span><span class="p">:</span>
+    <span class="c1"># Spin up cluster (if running in parallel)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">serial</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dask.distributed</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span><span class="p">,</span> <span class="n">LocalCluster</span>
+
+        <span class="n">cluster</span> <span class="o">=</span> <span class="n">LocalCluster</span><span class="p">(</span><span class="o">**</span><span class="n">lc_kwargs</span><span class="p">)</span>
+        <span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">cluster</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">serial</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dask.distributed</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dask_jobqueue</span><span class="w"> </span><span class="kn">import</span> <span class="n">PBSCluster</span>
+
+        <span class="n">cluster</span> <span class="o">=</span> <span class="n">PBSCluster</span><span class="p">(</span>
+            <span class="n">cores</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">processes</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">memory</span><span class="o">=</span><span class="s2">&quot;50GB&quot;</span><span class="p">,</span>
+            <span class="n">queue</span><span class="o">=</span><span class="s2">&quot;casper&quot;</span><span class="p">,</span>
+            <span class="n">walltime</span><span class="o">=</span><span class="s2">&quot;01:00:00&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">cluster</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">jobs</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">cluster</span><span class="p">)</span>
+<span class="n">client</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/glade/work/tking/conda-envs/cupid-analysis/lib/python3.11/site-packages/distributed/node.py:187: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 36999 instead
+  warnings.warn(
+</pre></div>
+</div>
+<div class="output text_html"><div>
+    <div style="width: 24px; height: 24px; background-color: #e1e1e1; border: 3px solid #9D9D9D; border-radius: 5px; position: absolute;"> </div>
+    <div style="margin-left: 48px;">
+        <h3 style="margin-bottom: 0px;">Client</h3>
+        <p style="color: #9D9D9D; margin-bottom: 0px;">Client-bd7e1f5d-b90c-11f0-b1ff-10ffe05c005a</p>
+        <table style="width: 100%; text-align: left;">
+
+        <tr>
+        
+            <td style="text-align: left;"><strong>Connection method:</strong> Cluster object</td>
+            <td style="text-align: left;"><strong>Cluster type:</strong> distributed.LocalCluster</td>
+        
+        </tr>
+
+        
+            <tr>
+                <td style="text-align: left;">
+                    <strong>Dashboard: </strong> <a href="http://127.0.0.1:36999/status" target="_blank">http://127.0.0.1:36999/status</a>
+                </td>
+                <td style="text-align: left;"></td>
+            </tr>
+        
+
+        </table>
+
+        
+
+        
+            <details>
+            <summary style="margin-bottom: 20px;"><h3 style="display: inline;">Cluster Info</h3></summary>
+            <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-mod-trusted jp-OutputArea-output">
+    <div style="width: 24px; height: 24px; background-color: #e1e1e1; border: 3px solid #9D9D9D; border-radius: 5px; position: absolute;">
+    </div>
+    <div style="margin-left: 48px;">
+        <h3 style="margin-bottom: 0px; margin-top: 0px;">LocalCluster</h3>
+        <p style="color: #9D9D9D; margin-bottom: 0px;">5880b656</p>
+        <table style="width: 100%; text-align: left;">
+            <tr>
+                <td style="text-align: left;">
+                    <strong>Dashboard:</strong> <a href="http://127.0.0.1:36999/status" target="_blank">http://127.0.0.1:36999/status</a>
+                </td>
+                <td style="text-align: left;">
+                    <strong>Workers:</strong> 12
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    <strong>Total threads:</strong> 12
+                </td>
+                <td style="text-align: left;">
+                    <strong>Total memory:</strong> 120.00 GiB
+                </td>
+            </tr>
+            
+            <tr>
+    <td style="text-align: left;"><strong>Status:</strong> running</td>
+    <td style="text-align: left;"><strong>Using processes:</strong> True</td>
+</tr>
+
+            
+        </table>
+
+        <details>
+            <summary style="margin-bottom: 20px;">
+                <h3 style="display: inline;">Scheduler Info</h3>
+            </summary>
+
+            <div style="">
+    <div>
+        <div style="width: 24px; height: 24px; background-color: #FFF7E5; border: 3px solid #FF6132; border-radius: 5px; position: absolute;"> </div>
+        <div style="margin-left: 48px;">
+            <h3 style="margin-bottom: 0px;">Scheduler</h3>
+            <p style="color: #9D9D9D; margin-bottom: 0px;">Scheduler-4cf40db9-6512-4e8e-9335-82a1dfcee08f</p>
+            <table style="width: 100%; text-align: left;">
+                <tr>
+                    <td style="text-align: left;">
+                        <strong>Comm:</strong> tcp://127.0.0.1:40479
+                    </td>
+                    <td style="text-align: left;">
+                        <strong>Workers:</strong> 0 
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <strong>Dashboard:</strong> <a href="http://127.0.0.1:36999/status" target="_blank">http://127.0.0.1:36999/status</a>
+                    </td>
+                    <td style="text-align: left;">
+                        <strong>Total threads:</strong> 0
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <strong>Started:</strong> Just now
+                    </td>
+                    <td style="text-align: left;">
+                        <strong>Total memory:</strong> 0 B
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <details style="margin-left: 48px;">
+        <summary style="margin-bottom: 20px;">
+            <h3 style="display: inline;">Workers</h3>
+        </summary>
+
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 0</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:46859
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:34607/status" target="_blank">http://127.0.0.1:34607/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:40573
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-r29fk3h3
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 1</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:45015
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:34563/status" target="_blank">http://127.0.0.1:34563/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:45639
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-n_qvoruc
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 2</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:33867
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:44493/status" target="_blank">http://127.0.0.1:44493/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:44881
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-z321062s
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 3</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:40611
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:44189/status" target="_blank">http://127.0.0.1:44189/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:38747
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-r_xyky61
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 4</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:44485
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:43703/status" target="_blank">http://127.0.0.1:43703/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:35669
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-rsr5fj80
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 5</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:39303
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:44385/status" target="_blank">http://127.0.0.1:44385/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:37085
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-z_tvy9_8
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 6</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:41851
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:41581/status" target="_blank">http://127.0.0.1:41581/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:34675
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-ltf6a1gr
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 7</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:35391
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:35583/status" target="_blank">http://127.0.0.1:35583/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:41639
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-71zmuuv8
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 8</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:34805
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:36213/status" target="_blank">http://127.0.0.1:36213/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:34217
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-ajx6lw_b
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 9</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:39699
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:40955/status" target="_blank">http://127.0.0.1:40955/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:44067
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-nxe5tz6i
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 10</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:39209
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:35463/status" target="_blank">http://127.0.0.1:35463/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:32991
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-vfz71ar8
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background-color: #DBF5FF; border: 3px solid #4CC9FF; border-radius: 5px; position: absolute;"> </div>
+            <div style="margin-left: 48px;">
+            <details>
+                <summary>
+                    <h4 style="margin-bottom: 0px; display: inline;">Worker: 11</h4>
+                </summary>
+                <table style="width: 100%; text-align: left;">
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Comm: </strong> tcp://127.0.0.1:45891
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Total threads: </strong> 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Dashboard: </strong> <a href="http://127.0.0.1:41551/status" target="_blank">http://127.0.0.1:41551/status</a>
+                        </td>
+                        <td style="text-align: left;">
+                            <strong>Memory: </strong> 10.00 GiB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <strong>Nanny: </strong> tcp://127.0.0.1:44377
+                        </td>
+                        <td style="text-align: left;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <strong>Local directory: </strong> /glade/derecho/scratch/tking/tmp/dask-scratch-space/worker-mgbb6rsu
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+            </details>
+            </div>
+        </div>
+        
+
+    </details>
+</div>
+
+        </details>
+    </div>
+</div>
+            </details>
+        
+
+    </div>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="loading-discharge-data">
+<h2>2. Loading discharge data <a id='load_q'></a><a class="headerlink" href="#loading-discharge-data" title="Link to this heading">#</a></h2>
+<section id="monthly-annual-flow-netcdfs">
+<h3>2.1. Monthly/annual flow netCDFs<a class="headerlink" href="#monthly-annual-flow-netcdfs" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>month_data (xr dataset)</p></li>
+<li><p>year_data (xr dataset)</p></li>
+<li><p>seas_data (xr dataset)</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
+
+<span class="n">reachID</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">month_data</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">year_data</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">seas_data</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">case</span><span class="p">,</span> <span class="n">meta</span> <span class="ow">in</span> <span class="n">case_dic</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">in_dire</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;output_dir&quot;</span><span class="p">],</span> <span class="n">case</span><span class="p">,</span> <span class="s2">&quot;rof/hist&quot;</span><span class="p">)</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">case_meta</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;model&quot;</span><span class="p">]</span>
+    <span class="n">domain</span> <span class="o">=</span> <span class="n">case_meta</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;domain_nc&quot;</span><span class="p">]</span>
+    <span class="n">var_list</span> <span class="o">=</span> <span class="n">case_meta</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;vars_read&quot;</span><span class="p">]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">preprocess</span><span class="p">(</span><span class="n">ds</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">ds</span><span class="p">[</span><span class="n">var_list</span><span class="p">]</span>
+
+    <span class="n">year_list</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;</span><span class="si">{:04d}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">yr</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">yr</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span>
+            <span class="nb">int</span><span class="p">(</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;sim_period&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">start</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;sim_period&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">stop</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="p">)</span>
+    <span class="p">]</span>
+
+    <span class="n">nc_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">nc_path</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">in_dire</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">case</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">hist_str</span><span class="si">}</span><span class="s2">.????-*.nc&quot;</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">yr</span> <span class="ow">in</span> <span class="n">year_list</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">yr</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">nc_path</span><span class="p">):</span>
+                <span class="n">nc_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">nc_path</span><span class="p">)</span>
+
+    <span class="c1"># load data</span>
+    <span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_mfdataset</span><span class="p">(</span>
+        <span class="n">nc_list</span><span class="p">,</span>
+        <span class="n">data_vars</span><span class="o">=</span><span class="s2">&quot;minimal&quot;</span><span class="p">,</span>
+        <span class="n">parallel</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">preprocess</span><span class="o">=</span><span class="n">preprocess</span><span class="p">,</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;sim_period&quot;</span><span class="p">])</span>
+
+    <span class="c1"># monthly</span>
+    <span class="n">month_data</span><span class="p">[</span><span class="n">case</span><span class="p">]</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="o">-</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;climo_nyrs&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">12</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+    <span class="c1"># annual</span>
+    <span class="n">year_data</span><span class="p">[</span><span class="n">case</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">ds</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="o">-</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;climo_nyrs&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">12</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+        <span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;YS&quot;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">load</span><span class="p">()</span>
+    <span class="p">)</span>
+    <span class="c1"># seasonal (compute here instead of reading for conisistent analysis period)</span>
+    <span class="n">seas_data</span><span class="p">[</span><span class="n">case</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">ds</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="o">-</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;climo_nyrs&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">12</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+        <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.month&quot;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">load</span><span class="p">()</span>
+    <span class="p">)</span>
+    <span class="n">vars_no_time</span> <span class="o">=</span> <span class="n">no_time_variable</span><span class="p">(</span><span class="n">month_data</span><span class="p">[</span><span class="n">case</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">vars_no_time</span><span class="p">:</span>
+        <span class="n">seas_data</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="n">vars_no_time</span><span class="p">]</span> <span class="o">=</span> <span class="n">seas_data</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="n">vars_no_time</span><span class="p">]</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span>
+            <span class="n">month</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span>
+        <span class="p">)</span>
+    <span class="n">mon_time</span> <span class="o">=</span> <span class="n">month_data</span><span class="p">[</span><span class="n">case</span><span class="p">]</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">values</span>
+    <span class="k">if</span> <span class="n">domain</span> <span class="o">==</span> <span class="s2">&quot;None&quot;</span><span class="p">:</span>
+        <span class="n">reachID</span><span class="p">[</span><span class="n">case</span><span class="p">]</span> <span class="o">=</span> <span class="n">month_data</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;reachID&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">reachID</span><span class="p">[</span><span class="n">case</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">domain_dir</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">domain</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)[</span><span class="s2">&quot;reachID&quot;</span><span class="p">]</span>
+            <span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">seg</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">))</span>
+            <span class="o">.</span><span class="n">values</span>
+        <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Finished loading </span><span class="si">{</span><span class="n">case</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finished loading b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finished loading b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
+CPU times: user 8.49 s, sys: 689 ms, total: 9.18 s
+Wall time: 13 s
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="d19-discharge-data">
+<h3>2.2 D19 discharge data<a class="headerlink" href="#d19-discharge-data" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>ds_q_obs_mon (xr datasets)</p></li>
+<li><p>ds_q_obs_yr (xr datasets)</p></li>
+<li><p>dr_q_obs_seasonal (xr datasets)</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
+
+<span class="c1"># read monthly data</span>
+<span class="n">ds_q</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span>
+    <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">/D09/coastal-stns-Vol-monthly.updated-May2019.mod.nc&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ref_flow_dir</span><span class="p">),</span>
+    <span class="n">decode_times</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ds_q</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">cftime_range</span><span class="p">(</span>
+    <span class="n">start</span><span class="o">=</span><span class="s2">&quot;1900-01-01&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;2018-12-01&quot;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s2">&quot;MS&quot;</span><span class="p">,</span> <span class="n">calendar</span><span class="o">=</span><span class="s2">&quot;standard&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># monthly- if time_period is outside observation period, use the entire obs period</span>
+<span class="n">obs_available</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">if</span> <span class="n">ds_q</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">mon_time</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">str</span><span class="p">(</span><span class="n">mon_time</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])))</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">obs_available</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">ds_q_obs_mon</span> <span class="o">=</span> <span class="n">ds_q</span><span class="p">[[</span><span class="s2">&quot;FLOW&quot;</span><span class="p">,</span> <span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">set_coords</span><span class="p">([</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">])</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">ds_q_obs_mon</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">ds_q</span><span class="p">[[</span><span class="s2">&quot;FLOW&quot;</span><span class="p">,</span> <span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">]]</span>
+        <span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">mon_time</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">str</span><span class="p">(</span><span class="n">mon_time</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])))</span>
+        <span class="o">.</span><span class="n">set_coords</span><span class="p">([</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">])</span>
+    <span class="p">)</span>
+<span class="c1"># compute annual flow from monthly</span>
+<span class="n">ds_q_obs_yr</span> <span class="o">=</span> <span class="n">ds_q_obs_mon</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;YE&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<span class="c1"># compute annual cycle at monthly scale</span>
+<span class="n">dr_q_obs_seasonal</span> <span class="o">=</span> <span class="n">ds_q_obs_mon</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.month&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 196 ms, sys: 11.1 ms, total: 207 ms
+Wall time: 207 ms
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;timed exec&gt;:6: DeprecationWarning: cftime_range() is deprecated, please use xarray.date_range(..., use_cftime=True) instead.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="reading-river-catchment-gauge-infomation">
+<h2>3. Reading river, catchment, gauge infomation  <a id='read_ancillary'></a><a class="headerlink" href="#reading-river-catchment-gauge-infomation" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>gauge-catchment (or grid box) link (csv)</p></li>
+<li><p>gauge point (geopackage)</p></li>
+<li><p>ocean polygon (geopackage)</p></li>
+<li><p>catchment polygon (geopackage)</p></li>
+<li><p>outlet reach information (netCDF)</p></li>
+</ul>
+<section id="reach-d19-gauge-link-csv">
+<h3>3.1. reach-D19 gauge link csv<a class="headerlink" href="#reach-d19-gauge-link-csv" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>gauge_reach_lnk (dataframe)</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gauge_reach_lnk</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">case</span><span class="p">,</span> <span class="n">meta</span> <span class="ow">in</span> <span class="n">case_dic</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">gauge_reach_lnk</span><span class="p">[</span><span class="n">case</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+        <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">/D09/D09_925.</span><span class="si">%s</span><span class="s2">.asc&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ref_flow_dir</span><span class="p">,</span> <span class="n">case_meta</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;network&quot;</span><span class="p">])</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The history saving thread hit an unexpected error (OperationalError(&#39;database is locked&#39;)).History will not be written to the database.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="d19-flow-site-geopackage">
+<h3>3.2 D19 flow site geopackage<a class="headerlink" href="#d19-flow-site-geopackage" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>gauge_shp (dataframe)</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
+
+<span class="n">gauge_shp</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ref_flow_dir</span><span class="p">,</span> <span class="s2">&quot;D09&quot;</span><span class="p">,</span> <span class="s2">&quot;geospatial&quot;</span><span class="p">,</span> <span class="s2">&quot;D09_925.gpkg&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">gauge_shp</span> <span class="o">=</span> <span class="n">gauge_shp</span><span class="p">[</span><span class="n">gauge_shp</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">9999999</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 11 ms, sys: 7.79 ms, total: 18.7 ms
+Wall time: 18.6 ms
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ocean-polygon-geopackage">
+<h3>3.3 Ocean polygon geopackage<a class="headerlink" href="#ocean-polygon-geopackage" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>ocean_shp (dataframe)</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
+
+<span class="n">ocean_shp</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">geospatial_dir</span><span class="p">,</span> <span class="s2">&quot;oceans.gpkg&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 251 ms, sys: 6.57 s, total: 6.82 s
+Wall time: 6.82 s
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="read-river-network-information">
+<h3>3.4 Read river network information<a class="headerlink" href="#read-river-network-information" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>gdf_cat (dataframe)</p></li>
+</ul>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
+
+<span class="c1">## read catchment geopackage</span>
+<span class="n">gdf_cat</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">case</span><span class="p">,</span> <span class="n">meta</span> <span class="ow">in</span> <span class="n">case_dic</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">cat_gpkg</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="n">geospatial_dir</span><span class="p">,</span> <span class="n">catch_gpkg</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;file_name&quot;</span><span class="p">]</span>
+    <span class="p">)</span>  <span class="c1"># geopackage name</span>
+    <span class="n">id_name_cat</span> <span class="o">=</span> <span class="n">catch_gpkg</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;id_name&quot;</span><span class="p">]</span>  <span class="c1"># reach ID in geopackage</span>
+    <span class="n">var_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">id_name_cat</span><span class="p">]</span>
+    <span class="k">if</span> <span class="s2">&quot;lk&quot;</span> <span class="ow">in</span> <span class="n">grid_name</span><span class="p">:</span>
+        <span class="n">var_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;lake&quot;</span><span class="p">)</span>
+    <span class="n">gdf_cat</span><span class="p">[</span><span class="n">case</span><span class="p">]</span> <span class="o">=</span> <span class="n">read_shps</span><span class="p">([</span><span class="n">cat_gpkg</span><span class="p">],</span> <span class="n">var_list</span><span class="p">)</span>
+    <span class="n">gdf_cat</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;centroid_longitude&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gdf_cat</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;geometry&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">centroid</span><span class="o">.</span><span class="n">x</span>
+    <span class="n">gdf_cat</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;centroid_latitude&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gdf_cat</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;geometry&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">centroid</span><span class="o">.</span><span class="n">y</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finished reading /glade/campaign/cesm/development/cross-wg/diagnostic_framework/rof_data/geospatial/MOSART_routing_Global_0.5x0.5_c170601_hru.gpkg
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;timed exec&gt;:12: UserWarning: Geometry is in a geographic CRS. Results from &#39;centroid&#39; are likely incorrect. Use &#39;GeoSeries.to_crs()&#39; to re-project geometries to a projected CRS before this operation.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;timed exec&gt;:13: UserWarning: Geometry is in a geographic CRS. Results from &#39;centroid&#39; are likely incorrect. Use &#39;GeoSeries.to_crs()&#39; to re-project geometries to a projected CRS before this operation.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finished reading /glade/campaign/cesm/development/cross-wg/diagnostic_framework/rof_data/geospatial/MOSART_routing_Global_0.5x0.5_c170601_hru.gpkg
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;timed exec&gt;:12: UserWarning: Geometry is in a geographic CRS. Results from &#39;centroid&#39; are likely incorrect. Use &#39;GeoSeries.to_crs()&#39; to re-project geometries to a projected CRS before this operation.
+
+&lt;timed exec&gt;:13: UserWarning: Geometry is in a geographic CRS. Results from &#39;centroid&#39; are likely incorrect. Use &#39;GeoSeries.to_crs()&#39; to re-project geometries to a projected CRS before this operation.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 1.53 s, sys: 255 ms, total: 1.78 s
+Wall time: 1.74 s
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+</section>
+<section id="read-river-outlet-information">
+<h3>3.5 Read river outlet information<a class="headerlink" href="#read-river-outlet-information" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Apppend into gdf_cat (dataframe)</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
+
+<span class="c1"># read river outlet netcdf</span>
+<span class="n">riv_ocean</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">case</span><span class="p">,</span> <span class="n">meta</span> <span class="ow">in</span> <span class="n">case_dic</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">riv_ocean_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="n">domain_dir</span><span class="p">,</span>
+        <span class="n">network_nc</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;file_name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.aug.nc&quot;</span><span class="p">,</span> <span class="s2">&quot;.outlet.nc&quot;</span><span class="p">),</span>
+    <span class="p">)</span>  <span class="c1"># network netcdf name</span>
+    <span class="n">ds_rn_ocean</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">riv_ocean_file</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="n">seg</span><span class="o">=</span><span class="s2">&quot;seg_id&quot;</span><span class="p">)</span>
+    <span class="n">df_tmp</span> <span class="o">=</span> <span class="n">ds_rn_ocean</span><span class="o">.</span><span class="n">to_dataframe</span><span class="p">()</span>
+    <span class="n">riv_ocean</span><span class="p">[</span><span class="n">case</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span>
+        <span class="n">gdf_cat</span><span class="p">[</span><span class="n">case</span><span class="p">],</span>
+        <span class="n">df_tmp</span><span class="p">,</span>
+        <span class="n">left_on</span><span class="o">=</span><span class="n">catch_gpkg</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;id_name&quot;</span><span class="p">],</span>
+        <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 190 ms, sys: 23.9 ms, total: 214 ms
+Wall time: 212 ms
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="merge-gauge-outlet-catchment-dataframe">
+<h3>3.6 Merge gauge, outlet catchment dataframe<a class="headerlink" href="#merge-gauge-outlet-catchment-dataframe" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>gauge_shp1 (dataframe)</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
+
+<span class="c1"># Merge gauge_reach lnk (dataframe) into gauge shapefile</span>
+<span class="n">gauge_shp1</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">case</span><span class="p">,</span> <span class="n">meta</span> <span class="ow">in</span> <span class="n">case_dic</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">gauge_reach_lnk</span><span class="p">[</span><span class="n">case</span><span class="p">]</span>
+
+    <span class="c1"># df = df.loc[(df[&#39;flag&#39;] == 0)]</span>
+    <span class="n">df1</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;riv_name&quot;</span><span class="p">])</span>
+    <span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">gauge_shp</span><span class="p">,</span> <span class="n">df1</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;gauge_id&quot;</span><span class="p">)</span>
+    <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span>
+        <span class="n">df2</span><span class="p">,</span>
+        <span class="n">riv_ocean</span><span class="p">[</span><span class="n">case</span><span class="p">],</span>
+        <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">,</span>
+        <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;route_id&quot;</span><span class="p">,</span>
+        <span class="n">right_on</span><span class="o">=</span><span class="n">catch_gpkg</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;id_name&quot;</span><span class="p">],</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 10.7 ms, sys: 0 ns, total: 10.7 ms
+Wall time: 10.4 ms
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="plot-annual-cycle-for-global-oceans">
+<h2>4. Plot annual cycle for global oceans <a id='annual_cycle_q'></a><a class="headerlink" href="#plot-annual-cycle-for-global-oceans" title="Link to this heading">#</a></h2>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">time</span>
+
+<span class="n">nrows</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">ncols</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">7.25</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span>
+    <span class="n">top</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mf">0.065</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mf">0.98</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mf">0.10</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mf">0.225</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.250</span>
+<span class="p">)</span>  <span class="c1"># create some space below the plots by increasing the bottom-value</span>
+
+<span class="k">for</span> <span class="n">ix</span><span class="p">,</span> <span class="n">ocean_name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">oceans_list</span><span class="p">):</span>
+    <span class="n">row</span> <span class="o">=</span> <span class="n">ix</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">col</span> <span class="o">=</span> <span class="n">ix</span> <span class="o">%</span> <span class="mi">2</span>
+    <span class="k">for</span> <span class="n">case</span><span class="p">,</span> <span class="n">meta</span> <span class="ow">in</span> <span class="n">case_dic</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+
+        <span class="n">q_name</span> <span class="o">=</span> <span class="n">case_meta</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;flow_name&quot;</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">case_meta</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;network_type&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;vector&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">ocean_name</span> <span class="o">==</span> <span class="s2">&quot;global&quot;</span><span class="p">:</span>
+                <span class="n">id_list</span> <span class="o">=</span> <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;route_id&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">id_list</span> <span class="o">=</span> <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;ocean&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">ocean_name</span><span class="p">][</span>
+                    <span class="s2">&quot;route_id&quot;</span>
+                <span class="p">]</span><span class="o">.</span><span class="n">values</span>
+            <span class="n">reach_index</span> <span class="o">=</span> <span class="n">get_index_array</span><span class="p">(</span><span class="n">reachID</span><span class="p">[</span><span class="n">case</span><span class="p">],</span> <span class="n">id_list</span><span class="p">)</span>
+            <span class="n">dr_flow</span> <span class="o">=</span> <span class="n">seas_data</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="n">q_name</span><span class="p">]</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">seg</span><span class="o">=</span><span class="n">reach_index</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;seg&quot;</span><span class="p">)</span>
+            <span class="n">dr_flow</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">],</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">case</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">case_meta</span><span class="p">[</span><span class="n">grid_name</span><span class="p">][</span><span class="s2">&quot;network_type&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;grid&quot;</span><span class="p">:</span>  <span class="c1"># means 2d grid</span>
+            <span class="k">if</span> <span class="n">ocean_name</span> <span class="o">==</span> <span class="s2">&quot;global&quot;</span><span class="p">:</span>
+                <span class="n">id_list</span> <span class="o">=</span> <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;route_id&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">id_list</span> <span class="o">=</span> <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;ocean&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">ocean_name</span><span class="p">][</span>
+                    <span class="s2">&quot;route_id&quot;</span>
+                <span class="p">]</span><span class="o">.</span><span class="n">values</span>
+
+            <span class="n">reach_index</span> <span class="o">=</span> <span class="n">get_index_array</span><span class="p">(</span><span class="n">reachID</span><span class="p">[</span><span class="n">case</span><span class="p">],</span> <span class="n">id_list</span><span class="p">)</span>
+            <span class="n">seas_data_vector</span> <span class="o">=</span> <span class="n">seas_data</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="n">q_name</span><span class="p">]</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">seg</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">))</span>
+            <span class="n">dr_flow</span> <span class="o">=</span> <span class="n">seas_data_vector</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">seg</span><span class="o">=</span><span class="n">reach_index</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;seg&quot;</span><span class="p">)</span>
+            <span class="n">dr_flow</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">],</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">case</span><span class="p">)</span>
+
+    <span class="c1"># reference data</span>
+    <span class="k">if</span> <span class="n">obs_available</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ocean_name</span> <span class="o">==</span> <span class="s2">&quot;global&quot;</span><span class="p">:</span>
+            <span class="n">id_list</span> <span class="o">=</span> <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;id&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">id_list</span> <span class="o">=</span> <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;ocean&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">ocean_name</span><span class="p">][</span>
+                <span class="s2">&quot;id&quot;</span>
+            <span class="p">]</span><span class="o">.</span><span class="n">values</span>
+        <span class="n">gauge_index</span> <span class="o">=</span> <span class="n">get_index_array</span><span class="p">(</span><span class="n">ds_q</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">id_list</span><span class="p">)</span>
+        <span class="n">dr_obs</span> <span class="o">=</span> <span class="n">dr_q_obs_seasonal</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">station</span><span class="o">=</span><span class="n">gauge_index</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;station&quot;</span><span class="p">)</span>
+        <span class="n">dr_obs</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">],</span>
+            <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;None&quot;</span><span class="p">,</span>
+            <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span>
+            <span class="n">markersize</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+            <span class="n">c</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span>
+            <span class="n">label</span><span class="o">=</span><span class="s2">&quot;D19&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+
+    <span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ix</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ocean_name</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">:</span>
+        <span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">col</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Mon. flow [m$^3$/s]&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="s2">&quot;both&quot;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="s2">&quot;x-small&quot;</span><span class="p">)</span>
+
+<span class="c1"># Legend- make space below the plot-raise bottom. there will be an label below the second last (bottom middle) ax, thanks to the bbox_to_anchor=(x, y) with a negative y-value.</span>
+<span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span>
+    <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;center left&quot;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.10</span><span class="p">,</span> <span class="mf">0.40</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span> <span class="n">ncol</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="s2">&quot;small&quot;</span>
+<span class="p">)</span>
+
+<span class="k">for</span> <span class="n">jx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ix</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">nrows</span> <span class="o">*</span> <span class="n">ncols</span><span class="p">):</span>
+    <span class="n">row</span> <span class="o">=</span> <span class="n">jx</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">col</span> <span class="o">=</span> <span class="n">jx</span> <span class="o">%</span> <span class="mi">2</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">delaxes</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="n">figureSave</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;./NB2_Fig1_ocean_discharge_season_</span><span class="si">{</span><span class="n">analysis_name</span><span class="si">}</span><span class="s2">.png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 2 μs, sys: 0 ns, total: 2 μs
+Wall time: 3.81 μs
+</pre></div>
+</div>
+<img alt="../_images/64b0afb7c599ef15ec60255b66cbf3b9a3d5d2fab8493c82a4a93de7f4b30c03.png" src="../_images/64b0afb7c599ef15ec60255b66cbf3b9a3d5d2fab8493c82a4a93de7f4b30c03.png" />
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="plot-zonal-mean-annual-dicharge-to-the-oceans">
+<h2>5. Plot zonal mean annual dicharge to the oceans <a id='zonal_mean_annual_q'></a><a class="headerlink" href="#plot-zonal-mean-annual-dicharge-to-the-oceans" title="Link to this heading">#</a></h2>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">time</span>
+<span class="c1"># compute zonal mean total discharge from all the outlets in the modeled river networks.</span>
+<span class="n">oceans_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;atlantic&quot;</span><span class="p">,</span> <span class="s2">&quot;pacific&quot;</span><span class="p">,</span> <span class="s2">&quot;indian&quot;</span><span class="p">,</span> <span class="s2">&quot;global&quot;</span><span class="p">]</span>
+
+<span class="c1"># Define latitude bins every 1 degree</span>
+<span class="n">lat_bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">80</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+<span class="c1"># Compute bin centers for labeling</span>
+<span class="n">lat_bin_centers</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">lat_bins</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">lat_bins</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+
+<span class="k">for</span> <span class="n">ix</span><span class="p">,</span> <span class="n">ocean_name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">oceans_list</span><span class="p">):</span>
+
+    <span class="n">nrows</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">ncols</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">6.5</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span>
+        <span class="n">top</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mf">0.065</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mf">0.98</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mf">0.10</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mf">0.225</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.250</span>
+    <span class="p">)</span>  <span class="c1"># create some space below the plots by increasing the bottom-value</span>
+
+    <span class="n">axes_right</span> <span class="o">=</span> <span class="n">axes</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">case</span><span class="p">,</span> <span class="n">meta</span> <span class="ow">in</span> <span class="n">case_dic</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">grid_name</span> <span class="o">=</span> <span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]</span>
+        <span class="n">q_name</span> <span class="o">=</span> <span class="n">case_meta</span><span class="p">[</span><span class="n">meta</span><span class="p">[</span><span class="s2">&quot;grid&quot;</span><span class="p">]][</span><span class="s2">&quot;flow_name&quot;</span><span class="p">]</span>
+
+        <span class="c1"># extract flow data and latitude at outlet locations (index)</span>
+        <span class="k">if</span> <span class="n">ocean_name</span> <span class="o">==</span> <span class="s2">&quot;global&quot;</span><span class="p">:</span>
+            <span class="n">id_list</span> <span class="o">=</span> <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;route_id&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">id_list</span> <span class="o">=</span> <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;ocean&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">ocean_name</span><span class="p">][</span>
+                <span class="s2">&quot;route_id&quot;</span>
+            <span class="p">]</span><span class="o">.</span><span class="n">values</span>
+        <span class="n">reach_index</span> <span class="o">=</span> <span class="n">get_index_array</span><span class="p">(</span><span class="n">reachID</span><span class="p">[</span><span class="n">case</span><span class="p">],</span> <span class="n">id_list</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">case_meta</span><span class="p">[</span><span class="n">grid_name</span><span class="p">][</span><span class="s2">&quot;network_type&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;vector&quot;</span><span class="p">:</span>
+            <span class="c1"># 1. Extract the mapping from riv_ocean (HRU → latitude)</span>
+            <span class="n">lat_map</span> <span class="o">=</span> <span class="n">riv_ocean</span><span class="p">[</span><span class="n">case</span><span class="p">]</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;hruid&quot;</span><span class="p">)[</span><span class="s2">&quot;centroid_latitude&quot;</span><span class="p">]</span>
+
+            <span class="c1"># 2. Convert that Series into an xarray DataArray</span>
+            <span class="n">lat_da</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span>
+                <span class="n">lat_map</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;hruid&quot;</span><span class="p">],</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;hruid&quot;</span><span class="p">:</span> <span class="n">lat_map</span><span class="o">.</span><span class="n">index</span><span class="p">},</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;lat&quot;</span>
+            <span class="p">)</span>
+
+            <span class="c1"># 3. Align `lat_da` with the reachID coordinate in seas_data</span>
+            <span class="c1">#    (We assume reachID corresponds to hruid values)</span>
+            <span class="n">lat_for_reach</span> <span class="o">=</span> <span class="n">lat_da</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span>
+                <span class="n">hruid</span><span class="o">=</span><span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">seas_data</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;reachID&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;seg&quot;</span><span class="p">])</span>
+            <span class="p">)</span>
+
+            <span class="c1"># 4. Assign it as a new variable in seas_data</span>
+            <span class="n">seas_data</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lat_for_reach</span>
+
+            <span class="n">ds_flow</span> <span class="o">=</span> <span class="n">seas_data</span><span class="p">[</span><span class="n">case</span><span class="p">][[</span><span class="n">q_name</span><span class="p">,</span> <span class="s2">&quot;lat&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">seg</span><span class="o">=</span><span class="n">reach_index</span><span class="p">)</span>
+
+            <span class="c1"># Group by latitude bins and take the mean across segments in each bin</span>
+            <span class="n">zonal_mean</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">ds_flow</span><span class="p">[</span><span class="n">q_name</span><span class="p">]</span>
+                <span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;month&quot;</span><span class="p">)</span>
+                <span class="o">.</span><span class="n">groupby_bins</span><span class="p">(</span><span class="n">ds_flow</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="n">lat_bins</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">lat_bin_centers</span><span class="p">)</span>
+                <span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;seg&quot;</span><span class="p">,</span> <span class="n">skipna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="p">)</span> <span class="o">/</span> <span class="mi">1000000</span>
+
+        <span class="k">elif</span> <span class="n">case_meta</span><span class="p">[</span><span class="n">grid_name</span><span class="p">][</span><span class="s2">&quot;network_type&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;grid&quot;</span><span class="p">:</span>  <span class="c1"># means 2d grid</span>
+
+            <span class="n">seas_data_vector</span> <span class="o">=</span> <span class="n">seas_data</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="n">q_name</span><span class="p">]</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">seg</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">))</span>
+            <span class="n">dr_flow</span> <span class="o">=</span> <span class="n">seas_data_vector</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">seg</span><span class="o">=</span><span class="n">reach_index</span><span class="p">)</span>
+            <span class="n">zonal_mean</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">dr_flow</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;month&quot;</span><span class="p">)</span>
+                <span class="o">.</span><span class="n">groupby_bins</span><span class="p">(</span><span class="n">dr_flow</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="n">lat_bins</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">lat_bin_centers</span><span class="p">)</span>
+                <span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;seg&quot;</span><span class="p">,</span> <span class="n">skipna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="p">)</span> <span class="o">/</span> <span class="mi">1000000</span>
+
+        <span class="c1"># Rename the bin dimension to &#39;lat&#39; for clarity</span>
+        <span class="n">zonal_mean</span> <span class="o">=</span> <span class="n">zonal_mean</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s2">&quot;lat_bins&quot;</span><span class="p">:</span> <span class="s2">&quot;lat&quot;</span><span class="p">})</span>
+        <span class="n">zonal_mean</span> <span class="o">=</span> <span class="n">zonal_mean</span><span class="o">.</span><span class="n">assign_coords</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="n">lat_bin_centers</span><span class="p">))</span>
+
+        <span class="c1"># plot zonal mean discharge per 1-degree lat</span>
+        <span class="n">zonal_mean</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">case</span><span class="p">)</span>
+        <span class="c1"># plot cumulative zonal mean discharge per 1-degree lat</span>
+        <span class="n">zonal_mean</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;lat&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">ax</span><span class="o">=</span><span class="n">axes_right</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">case</span>
+        <span class="p">)</span>
+
+    <span class="c1"># reference data</span>
+    <span class="k">if</span> <span class="n">obs_available</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ocean_name</span> <span class="o">==</span> <span class="s2">&quot;global&quot;</span><span class="p">:</span>
+            <span class="n">id_list</span> <span class="o">=</span> <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;id&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">id_list</span> <span class="o">=</span> <span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="n">gauge_shp1</span><span class="p">[</span><span class="n">case</span><span class="p">][</span><span class="s2">&quot;ocean&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">ocean_name</span><span class="p">][</span>
+                <span class="s2">&quot;id&quot;</span>
+            <span class="p">]</span><span class="o">.</span><span class="n">values</span>
+        <span class="n">gauge_index</span> <span class="o">=</span> <span class="n">get_index_array</span><span class="p">(</span><span class="n">ds_q</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">id_list</span><span class="p">)</span>
+        <span class="n">dr_obs</span> <span class="o">=</span> <span class="n">dr_q_obs_seasonal</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">station</span><span class="o">=</span><span class="n">gauge_index</span><span class="p">)</span>
+        <span class="n">zonal_mean_obs</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">dr_obs</span><span class="p">[</span><span class="s2">&quot;FLOW&quot;</span><span class="p">]</span>
+            <span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;month&quot;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">groupby_bins</span><span class="p">(</span><span class="n">dr_obs</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="n">lat_bins</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">lat_bin_centers</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;station&quot;</span><span class="p">,</span> <span class="n">skipna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="p">)</span> <span class="o">/</span> <span class="mi">1000000</span>
+
+        <span class="n">zonal_mean_obs</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">,</span>
+            <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;None&quot;</span><span class="p">,</span>
+            <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span>
+            <span class="n">markersize</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+            <span class="n">c</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span>
+            <span class="n">label</span><span class="o">=</span><span class="s2">&quot;D19&quot;</span><span class="p">,</span>
+            <span class="n">zorder</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="p">)</span>
+
+    <span class="n">axes</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ocean_name</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Latitude&quot;</span><span class="p">)</span>
+
+    <span class="n">axes</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">80</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+    <span class="n">axes</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="s2">&quot;80S&quot;</span><span class="p">,</span> <span class="s2">&quot;60S&quot;</span><span class="p">,</span> <span class="s2">&quot;40S&quot;</span><span class="p">,</span> <span class="s2">&quot;20S&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;20N&quot;</span><span class="p">,</span> <span class="s2">&quot;40N&quot;</span><span class="p">,</span> <span class="s2">&quot;60N&quot;</span><span class="p">,</span> <span class="s2">&quot;80N&quot;</span><span class="p">])</span>
+    <span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span>
+        <span class="s2">&quot;Total annual discharge to ocean [10$^6$ m$^3$/s per degree lat]&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span>
+    <span class="p">)</span>
+    <span class="n">axes</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="s2">&quot;both&quot;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="s2">&quot;small&quot;</span><span class="p">)</span>
+
+    <span class="n">axes_right</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span>
+        <span class="s2">&quot;Total annual discharge accumulated from 90S [10$^6$ m$^3$/s]&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span>
+    <span class="p">)</span>
+    <span class="n">axes_right</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="s2">&quot;both&quot;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="s2">&quot;small&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Legend- make space below the plot-raise bottom. there will be an label below the second last (bottom middle) ax, thanks to the bbox_to_anchor=(x, y) with a negative y-value.</span>
+    <span class="n">axes</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span>
+        <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;center left&quot;</span><span class="p">,</span>
+        <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.025</span><span class="p">,</span> <span class="mf">0.875</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>
+        <span class="n">ncol</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">fontsize</span><span class="o">=</span><span class="s2">&quot;small&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">figureSave</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;./NB2_Fig3_global_zonal_mean_annal_discharge_</span><span class="si">{</span><span class="n">ocean_name</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">analysis_name</span><span class="si">}</span><span class="s2">_gauge_only.png&quot;</span><span class="p">,</span>
+            <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
+        <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 1 μs, sys: 1 μs, total: 2 μs
+Wall time: 3.81 μs
+</pre></div>
+</div>
+<img alt="../_images/63ea7508a0319d6051307822bad4ac426f906412b0c1d43ccc3760a14d188316.png" src="../_images/63ea7508a0319d6051307822bad4ac426f906412b0c1d43ccc3760a14d188316.png" />
+<img alt="../_images/95e957bc87d5eb7128e6ff3ca38fd43fa01a514c9dda251933563b04a7679105.png" src="../_images/95e957bc87d5eb7128e6ff3ca38fd43fa01a514c9dda251933563b04a7679105.png" />
+<img alt="../_images/bf4c38e9eafe53c5ee65978a3eeb2905ab30e5c9fbe4f1cff276f23093c6904e.png" src="../_images/bf4c38e9eafe53c5ee65978a3eeb2905ab30e5c9fbe4f1cff276f23093c6904e.png" />
+<img alt="../_images/406c61625ceda2a810421347c1166ac632b0da872cc72bc79e0b38bf75516c8f.png" src="../_images/406c61625ceda2a810421347c1166ac632b0da872cc72bc79e0b38bf75516c8f.png" />
+</div>
+</details>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">client</span><span class="p">:</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dask client shutdown complete.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dask client shutdown complete.
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "cupid-analysis"
+        },
+        kernelOptions: {
+            name: "cupid-analysis",
+            path: "./rof"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'cupid-analysis'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="global_discharge_gauge_compare_obs.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">ROF global monthly, annual, seasonal flows analysis <a id='top'></a></p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">1. Setup <a id="configuration"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dasks-optional">dasks (optional)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-discharge-data">2. Loading discharge data <a id="load_q"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monthly-annual-flow-netcdfs">2.1. Monthly/annual flow netCDFs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d19-discharge-data">2.2 D19 discharge data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-river-catchment-gauge-infomation">3. Reading river, catchment, gauge infomation  <a id="read_ancillary"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reach-d19-gauge-link-csv">3.1. reach-D19 gauge link csv</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d19-flow-site-geopackage">3.2 D19 flow site geopackage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ocean-polygon-geopackage">3.3 Ocean polygon geopackage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-river-network-information">3.4 Read river network information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-river-outlet-information">3.5 Read river outlet information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merge-gauge-outlet-catchment-dataframe">3.6 Merge gauge, outlet catchment dataframe</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-annual-cycle-for-global-oceans">4. Plot annual cycle for global oceans <a id="annual_cycle_q"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-zonal-mean-annual-dicharge-to-the-oceans">5. Plot zonal mean annual dicharge to the oceans <a id="zonal_mean_annual_q"></a></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By none
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
