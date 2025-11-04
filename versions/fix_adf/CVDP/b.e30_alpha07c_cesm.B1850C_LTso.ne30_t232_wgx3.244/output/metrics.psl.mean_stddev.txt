@@ -1,0 +1,6 @@
+
+Pattern Correlations/RMS Differences   Observations vs. Model(s)
+
+                   CERA20C_ERAI       ERAI     MERRA2 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
+                   ------------ ---------- ---------- -------------------------------------------------- --------------------------------------------------
+psl Std Dev (Ann)     0.95/0.19  0.96/0.18  0.96/0.18                                          0.89/0.28                                          0.94/0.21

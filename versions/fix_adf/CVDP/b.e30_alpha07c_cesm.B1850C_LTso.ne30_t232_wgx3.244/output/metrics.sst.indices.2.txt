@@ -1,0 +1,7 @@
+
+Pattern Correlations/RMS Differences   Observations vs. Model(s)
+
+                      HadISST ERSST v5_1  HadISST_1 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244 b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
+                   ---------- ---------- ---------- -------------------------------------------------- --------------------------------------------------
+El Nino Hovmoller   0.99/0.11  0.96/0.24  0.94/0.27                                          9.99/9.99                                          0.74/0.82
+La Nina Hovmoller   0.97/0.14  0.92/0.26  0.90/0.28                                          9.99/9.99                                          0.68/0.78
